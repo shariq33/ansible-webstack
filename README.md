@@ -29,6 +29,11 @@ curl http://localhost:8080
 - CI/CD integration
 - Network device automation
 
+## Demo Output
+
+![Ansible Playbook Run](screenshots/run.png)
+
+
 ![Ansible](https://img.shields.io/badge/Ansible-Automation-red)
 ![Platform](https://img.shields.io/badge/Platform-macOS-blue)
 
