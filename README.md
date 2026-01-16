@@ -29,6 +29,15 @@ curl http://localhost:8080
 - CI/CD integration
 - Network device automation
 
+## What This Project Demonstrates
+
+- Infrastructure automation using Ansible
+- Configuration management
+- Idempotent deployments
+- Role-based architecture
+- Templated config management
+
+
 ## Demo Output
 
 ![Ansible Playbook Run](screenshots/run.png)
