@@ -1,0 +1,5 @@
+- name: Configure local web server using Ansible
+  hosts: webservers
+  roles:
+    - webserver
+

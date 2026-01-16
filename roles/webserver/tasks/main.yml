@@ -1,0 +1,16 @@
+- name: Install nginx using Homebrew
+  homebrew:
+    name: nginx
+    state: present
+  when: ansible_os_family == "Darwin"
+
+- name: Start nginx service
+  shell: brew services start nginx
+  when: ansible_os_family == "Darwin"
+
+- name: Deploy nginx configuration
+  template:
+    src: nginx.conf.j2
+    dest: /opt/homebrew/etc/nginx/nginx.conf
+  notify: restart nginx
+
